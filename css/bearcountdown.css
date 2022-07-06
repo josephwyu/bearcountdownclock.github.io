@@ -24,6 +24,11 @@ span {
   color: white;
 }
 
+#center{
+  display: block;
+  font-size: 50px;
+}
+
 #days {
   font-size: 100px;
   color: #db4844;

@@ -1,7 +1,7 @@
 function makeTimer() {
 
 	//		var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");
-		var endTime = new Date("29 April 2020 9:56:00 GMT+01:00");
+		var endTime = new Date("15 July 2022 19:00:00 GMT-07:00");
 			endTime = (Date.parse(endTime) / 1000);
 
 			var now = new Date();
@@ -25,4 +25,4 @@ function makeTimer() {
 
 	}
 
-	setInterval(function() { makeTimer(); }, 1000);
+	setInterval(function() { makeTimer(); }, 100);
