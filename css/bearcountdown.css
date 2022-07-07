@@ -38,20 +38,22 @@ p {
   font-size: 20px;
 }
 
+
+
 #bubu1{
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right: 0;
 }
 
 #bubu2{
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left:  0;
 }
 
 #bubu3{
-  position: absolute;
+  position: fixed;
   top: 0;
   left:  0;
   height: 50vh;
@@ -59,14 +61,14 @@ p {
 }
 
 #bubu4{
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
 }
 
 #bubu5{
-  position: absolute;
-  bottom: 400px;
+  position: fixed;
+  bottom: 350px;
   right: 0;
   height: 25vh;
   width: 15vw;

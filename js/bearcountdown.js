@@ -3,9 +3,7 @@ var date;
 var dateSet = false;
 function setDate(){
   date = $('#meetingTime').val();
-  if (date != Nil){
-    dateSet = true;
-  }
+  dateSet = true;
 }
 function makeTimer() {
       var endTime;
