@@ -8,14 +8,58 @@
 
 <body>
   <div id="center">
-    <h1>
-      Disney Land 2022
-      Countdown
-    </h1>
+      <h1> &#128059; Bear's Personal</h1>
+      <h1> Countdown Timer &#128059; </h1>
+  </div>
+  <div>
+    <p>
+      Hi Bear!
+    </p>
+
+    <p>
+      I love you and I hope you are doing well during this time that we are apart. I made this countdown timer so you can use it whenever you want to know the exact date that we will be
+      seeing each other again. I miss you so much and I can't wait to see you again.
+    </p>
+
+    <p>
+      Yours Porever,
+      Joseph
+    </p>
+
   </div>
   <div id="days"></div>
   <div id="hours"></div>
   <div id="minutes"></div>
   <div id="seconds"></div>
+  <div>
+      <label for="meetingTime">Choose a time and day to count down from &#128151; :</label>
+      <input type="datetime-local" id="meetingTime"
+       name="meetingTime">
+      <input onclick="setDate()"type="submit" name="submit" value="Submit" />
+  </div>
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyCb_tr1dFxcKRGt4nUwr8MttV80J6fLmmc",
+    authDomain: "countdownapp-5c7af.firebaseapp.com",
+    projectId: "countdownapp-5c7af",
+    storageBucket: "countdownapp-5c7af.appspot.com",
+    messagingSenderId: "824528601236",
+    appId: "1:824528601236:web:ac51e1018d2857ff87f481"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  </script>
+  <img id="bubu1" src = "https://c.tenor.com/D1CAg1rBD6wAAAAi/tkthao219-bubududu.gif">
+  <img id="bubu2" src = "https://c.tenor.com/8trqa66_h6MAAAAi/dudu-bubu-bear-and-panda.gif">
+  <img id="bubu3" src = "https://c.tenor.com/ZKsi3WzsGKwAAAAi/bubu-dudu-bear-and-panda.gif">
+  <img id="bubu4" src = "https://c.tenor.com/8trqa66_h6MAAAAi/dudu-bubu-bear-and-panda.gif">
+  <img id="bubu5" src = "https://c.tenor.com/MPD8ohhApRYAAAAi/bubu-dudu.gif">
 </body>
 </html>

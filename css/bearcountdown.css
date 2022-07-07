@@ -24,6 +24,53 @@ span {
   color: white;
 }
 
+label {
+  font-size: 20px;
+}
+
+h1 {
+  display: block;
+  font-size: 50px;
+}
+
+p {
+  display: block;
+  font-size: 20px;
+}
+
+#bubu1{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#bubu2{
+  position: absolute;
+  bottom: 0;
+  left:  0;
+}
+
+#bubu3{
+  position: absolute;
+  top: 0;
+  left:  0;
+  height: 50vh;
+  width: 18vw;
+}
+
+#bubu4{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#bubu5{
+  position: absolute;
+  bottom: 400px;
+  right: 0;
+  height: 25vh;
+  width: 15vw;
+}
 #center{
   display: block;
   font-size: 50px;
