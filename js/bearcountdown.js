@@ -1,17 +1,22 @@
-var date;
+let date = localStorage.getItem('meetingTime');
 function setDate() {
-	let date = localStorage.getItem('meetingTime');
-	if (!date) {
-		date = $('#meetingTime').val();
+	const currentSetDate = $('#meetingTime').val();
+	if (currentSetDate?.length) {
+		date = currentSetDate;
+		localStorage.setItem('meetingTime', currentSetDate);
 	}
 }
 function makeTimer() {
 	let endTime;
-	if (date.length) {
+	const currentTime = new Date();
+	if (date?.length) {
 		endTime = new Date(date);
 	} else {
 		// Set endTime to be the current date if no date was chosen.
-		endTime = new Date();
+		endTime = currentTime;
+	}
+	if (endTime < currentTime) {
+		endTime = currentTime;
 	}
 
 	endTime = Date.parse(endTime) / 1000;
