@@ -1,89 +1,119 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/bearcountdown.css">
-  <script src="js/bearcountdown.js"></script>
-</head>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bearcountdown.css" />
+    <script src="js/bearcountdown.js"></script>
+    <title>For My Bean</title>
+  </head>
 
-<body>
-  <div id="center">
-      <h1> &#128059; Bear's Personal</h1>
-      <h1> Countdown Timer &#128059; </h1>
-  </div>
-  <div>
-    <p>
-      Hi Bear!
-    </p>
+  <body>
+    <header>
+      <div id="center">
+        <h1>&#128059; Bear's Personal</h1>
+        <h1>Countdown Timer &#128059;</h1>
+      </div>
+      <img src="img/IMG_2400.jpg" height="403" width="302" />
+    </header>
+    <div>
+      <p>Hi Bear!</p>
 
-    <p>
-      I love you and I hope you are doing well during this time that we are apart. I made this countdown timer so you can use it whenever you want to know the exact date that we will be
-      seeing each other again. I miss you so much and I can't wait to see you again.
-    </p>
+      <p>
+        I love you and I hope you are doing well during this time that we are
+        apart. I made this countdown timer so you can use it whenever you want
+        to know the exact date that we will be seeing each other again. I miss
+        you so much and I can't wait to see you again.
+      </p>
 
-    <p>
-      Yours Porever,
-      <br>
-      Joseph
-    </p>
+      <p>
+        Yours Porever,
+        <br />
+        Joseph
+      </p>
+    </div>
+    <div id="days"></div>
+    <div id="hours"></div>
+    <div id="minutes"></div>
+    <div id="seconds"></div>
+    <div>
+      <label for="meetingTime"
+        >Choose a time and day to count down from &#128151; :</label
+      >
+      <input type="datetime-local" id="meetingTime" name="meetingTime" />
+      <input onclick="setDate()" type="submit" name="submit" value="Submit" />
+    </div>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
 
-  </div>
-  <div id="days"></div>
-  <div id="hours"></div>
-  <div id="minutes"></div>
-  <div id="seconds"></div>
-  <div>
-      <label for="meetingTime">Choose a time and day to count down from &#128151; :</label>
-      <input type="datetime-local" id="meetingTime"
-       name="meetingTime">
-      <input onclick="setDate()"type="submit" name="submit" value="Submit" />
-  </div>
-  <script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyCb_tr1dFxcKRGt4nUwr8MttV80J6fLmmc",
+        authDomain: "countdownapp-5c7af.firebaseapp.com",
+        projectId: "countdownapp-5c7af",
+        storageBucket: "countdownapp-5c7af.appspot.com",
+        messagingSenderId: "824528601236",
+        appId: "1:824528601236:web:ac51e1018d2857ff87f481",
+      };
 
-  // Your web app's Firebase configuration
-  const firebaseConfig = {
-    apiKey: "AIzaSyCb_tr1dFxcKRGt4nUwr8MttV80J6fLmmc",
-    authDomain: "countdownapp-5c7af.firebaseapp.com",
-    projectId: "countdownapp-5c7af",
-    storageBucket: "countdownapp-5c7af.appspot.com",
-    messagingSenderId: "824528601236",
-    appId: "1:824528601236:web:ac51e1018d2857ff87f481"
-  };
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+    </script>
 
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  </script>
+    <!-- bubu gifs -->
+    <nav>
+      <img
+        id="bubu1"
+        src="https://c.tenor.com/D1CAg1rBD6wAAAAi/tkthao219-bubududu.gif"
+        width="50"
+        height="50"
+      />
+      <img
+        id="bubu2"
+        src="https://c.tenor.com/8trqa66_h6MAAAAi/dudu-bubu-bear-and-panda.gif"
+        width="50"
+        height="50"
+      />
+      <img
+        id="bubu3"
+        src="https://c.tenor.com/ZKsi3WzsGKwAAAAi/bubu-dudu-bear-and-panda.gif"
+        width="50"
+        height="75"
+      />
+      <img
+        id="bubu4"
+        src="https://c.tenor.com/KvfFm2qt_AwAAAAi/bubu-dudu-bear-and-panda.gif"
+        width="70"
+        height="50"
+      />
+      <img
+        id="bubu5"
+        src="https://c.tenor.com/MPD8ohhApRYAAAAi/bubu-dudu.gif"
+        width="50"
+        height="50"
+      />
+    </nav>
 
-  <!-- bubu gifs -->
-  <img id="bubu1" src = "https://c.tenor.com/D1CAg1rBD6wAAAAi/tkthao219-bubududu.gif">
-  <img id="bubu2" src = "https://c.tenor.com/8trqa66_h6MAAAAi/dudu-bubu-bear-and-panda.gif">
-  <img id="bubu3" src = "https://c.tenor.com/ZKsi3WzsGKwAAAAi/bubu-dudu-bear-and-panda.gif">
-  <img id="bubu4" src = "https://c.tenor.com/KvfFm2qt_AwAAAAi/bubu-dudu-bear-and-panda.gif">
-  <img id="bubu5" src = "https://c.tenor.com/MPD8ohhApRYAAAAi/bubu-dudu.gif">
+    <!-- Slideshow container -->
+    <!-- <div class="slideshow-container"> -->
 
-  <!-- Slideshow container -->
-<!-- <div class="slideshow-container"> -->
-
-  <!-- Full-width images with number and caption text -->
-  <!-- <div class="mySlides fade">
+    <!-- Full-width images with number and caption text -->
+    <!-- <div class="mySlides fade">
     <div class="numbertext">1 / 1</div>
     <img src="https://c.tenor.com/35qjgXQDDygAAAAC/kawaiiiiiiiiiii-totemokawaii.gif" style="width:100%">
   </div> -->
 
-  <!-- Next and previous buttons -->
-  <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <!-- Next and previous buttons -->
+    <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
 <br> -->
 
-<!-- The dots/circles -->
-<!-- <div style="text-align:center">
+    <!-- The dots/circles -->
+    <!-- <div style="text-align:center">
   <span class="dot" onclick="currentSlide(1)"></span>
 </div> -->
-
-</body>
+  </body>
 </html>
