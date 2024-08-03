@@ -1,1 +1,1 @@
-# Coutdown Clock for Bear
+# Coutdown Clock
